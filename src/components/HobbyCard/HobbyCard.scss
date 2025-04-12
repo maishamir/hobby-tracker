@@ -1,0 +1,11 @@
+.hobbyCard {
+  background: var(--bgColor);
+
+  &__title {
+    color: #F3D0C3;
+  }
+
+  &__details {
+    color: white;
+  }
+}
