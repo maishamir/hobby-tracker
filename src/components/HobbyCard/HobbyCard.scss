@@ -1,8 +1,13 @@
 .hobbyCard {
   background: var(--bgColor);
+  height: 25vh;
+  width: 28vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.25s ease;
 
   &:hover {
-    
+    transform: scale(1.05);
   }
 
   &__title {
