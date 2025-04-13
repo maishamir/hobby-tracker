@@ -1,6 +1,10 @@
 .hobbyCard {
   background: var(--bgColor);
 
+  &:hover {
+    
+  }
+
   &__title {
     color: #F3D0C3;
   }
