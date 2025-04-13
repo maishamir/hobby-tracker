@@ -1,8 +1,9 @@
+
 import "./App.css";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Knitting from "./pages/Knitting";
-import Coding from "./pages/Coding";
+import Coding from "./pages/Coding/Coding";
 import Art from "./pages/Art";
 import Crochet from "./pages/Crochet";
 import Error from "./pages/Error";
