@@ -9,7 +9,7 @@
 
 .projectCard {
   background: #ffecc6;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
   border-radius: 2rem;
 
   &__name {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.3rem;
     font-family: monospace;
     margin-left: 1rem;
@@ -27,7 +27,7 @@
 
 .milestones {
   border: 2px solid #efd696;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   background: #fbf2e2;
   padding: 1rem  1.5rem;
   width: 65%;
@@ -38,8 +38,8 @@
 
   &__checkbox {
     appearance: none;
-    height: 1.5rem;
-    width: 2rem;
+    height: 1.25rem;
+    width: 1.75rem;
     border: 3px solid #bca5bf;
     border-radius: 2rem;
     background-color: transparent;
@@ -55,8 +55,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scale(0);
-      height: 0.7rem;
-      width: 1.1rem;
+      height: 0.6rem;
+      width: 0.95rem;
       border-radius: 1.8rem;
       transition: all 0.15s ease-in-out;
     }
