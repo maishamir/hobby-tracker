@@ -19,7 +19,17 @@ function Coding() {
         return <div className="projectCard" key={project.id}>
 
           <p className="projectCard__name">{project.name}</p>
-          <p className="projectCard__status">{project.status}</p>
+          <div className="projectCard__milestones">
+            {project.milestones.map(milestone => {
+              return (
+                <div className="projectCard__milestones-milestone">
+                  <input type="checkbox" checked={milestone.complete} id={milestone.state} name={milestone.state} />
+                  <label htmlFor={milestone.state}>{milestone.state}</label>
+                </div>
+                
+              )
+            })}
+          </div>
         </div>
       })}
       </div>
