@@ -1,47 +1,75 @@
 .projects {
   // border: 1px solid rebeccapurple;
-  width: 75vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
-
 .projectCard {
   background: #ffecc6;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   border: 4px solid #efd696;
   border-radius: 2rem;
 
   &__name {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+    font-family: sans-serif;
     margin-left: 1rem;
   }
+}
 
-  &__milestones {
-    border: 2px solid #efd696;
-    border-radius: 1rem;
-    background: #fbf2e2;
-    padding: 0.5rem;
-    width: 50%;
-    display: flex;
-    //   align-items: center;
-    justify-content: space-evenly;
+.milestones {
+  border: 2px solid #efd696;
+  border-radius: 1rem;
+  background: #fbf2e2;
+  padding: 1rem  1.5rem;
+  width: 65%;
+  display: flex;
+  //   align-items: center;
+  justify-content: space-between;
+  position: relative;
 
-    &-milestone {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+  &__checkbox {
+    appearance: none;
+    height: 1.5rem;
+    width: 2rem;
+    border: 3px solid #bca5bf;
+    border-radius: 2rem;
+    background-color: transparent;
+    // margin-right: 10px;
+    cursor: pointer;
+    position: relative;
 
-      input[type="checkbox"] {
-        background: #000;
-      }
+    &:before {
+      content: "";
+      background: #bca5bf;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      height: 0.7rem;
+      width: 1.1rem;
+      border-radius: 1.8rem;
+      transition: all 0.15s ease-in-out;
     }
+
+    &:checked:before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: monospace;
   }
 }
