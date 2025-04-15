@@ -14,18 +14,18 @@ function Coding() {
       <Link to="/">⬅ Back to Home</Link>
       <h1>💻 Coding Projects at a Glance 💻 </h1>
 
-      <div className="projects">
+      <div className="codingProjects">
       {codingProjects.projects.map(project => {
-        return <div className="projectCard" key={project.id}>
+        return <div className="codingProjects__projectCard" key={project.id}>
 
-          <p className="projectCard__name">{project.name}</p>
+          <p className="codingProjects__name">{project.name}</p>
 
           <div className="milestones">
             {project.milestones.map(milestone => {
               return (
                 <div className="milestones__item">
-                  <label htmlFor="" className="milestones__checkbox-label">
-                    <input type="checkbox" name={milestone.state} id={milestone.state} className="milestones__checkbox"/>
+                  <label htmlFor="" className="milestones__checkbox-label" >
+                    <input type="checkbox" name={milestone.state} id={milestone.state} className="milestones__checkbox" checked={milestone.complete} />
                     {milestone.state}
                   </label>
                 </div>

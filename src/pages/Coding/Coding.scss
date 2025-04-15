@@ -1,38 +1,38 @@
-.projects {
+.codingProjects {
   // border: 1px solid rebeccapurple;
   width: 80vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
-}
 
-.projectCard {
-  background: #ffecc6;
-  padding: 0.6rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  &__projectCard {
+    background: #ffecc6;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  border: 4px solid #efd696;
-  border-radius: 2rem;
+    border: 4px solid #efd696;
+    border-radius: 2rem;
+  }
 
   &__name {
-    font-weight: 400;
-    font-size: 1.2rem;
-    font-family: monospace;
-    margin-left: 1rem;
-    max-width: 20%;
-    width: 25%;
-    line-height: 2rem;
-  }
+      font-weight: 400;
+      font-size: 1.2rem;
+      font-family: monospace;
+      margin-left: 1rem;
+      max-width: 20%;
+      width: 25%;
+      line-height: 2rem;
+    }
 }
 
 .milestones {
   border: 2px solid #efd696;
   border-radius: 0.75rem;
   background: #fbf2e2;
-  padding: 1rem  1.5rem;
+  padding: 1rem 1.5rem;
   width: 65%;
   display: flex;
   //   align-items: center;
