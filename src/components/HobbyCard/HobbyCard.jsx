@@ -5,19 +5,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./HobbyCard.scss";
 
-function HobbyCard({ icon, hobbyname, projects, bgColor, id }) {
-  return <Link to={`/${id}`}>
+function HobbyCard({ icon, projectName, status,  bgColor, id }) {
+  return <Link to="/${id}">
     <div className="hobbyCard" style={{ "--bgColor": bgColor }}>
-      <h3 className="hobbyCard__title">
-        {icon} {hobbyname}
-      </h3>
-      <div className="hobbyCard__details">
-        <p>
-          {projects.length} {projects.length >= 2 ? `projects` : `project`}
-        </p>
-      </div>
+      <p className="hobbyCard__title">
+        {projectName}
+        {status}
+      </p>
     </div>
   </Link>;
 }
 
 export default HobbyCard;
+
+      // <h3 className="hobbyCard__title">
+      //   {icon} {projectName}
+      // </h3>
+      // <div className="hobbyCard__details">
+      //   <p>
+      //     {projects.length} {projects.length >= 2 ? `projects` : `project`}
+      //   </p>
+      // </div>

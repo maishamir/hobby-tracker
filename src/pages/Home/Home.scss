@@ -1,7 +1,24 @@
 .hobbies {
   // background: red;
-  width: 90vw;
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
+  &__category {
+    width: 90vw;
+    
+    &-title {
+      margin: 1.5rem 1rem;
+    }
+  }
+
+  &__projects {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.projectCard {
+  padding: 1rem 2rem;
+  width: 35%;
+  max-width: 35%;
+  color: white;
+  border-radius: 0.5rem;
+
 }

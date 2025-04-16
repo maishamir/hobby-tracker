@@ -10,16 +10,41 @@ function Home() {
         <h1>Hobbies/Projects At a Glance</h1>
       </header>
       <main className="hobbies">
-        {hobbies.map((hobby) => (
-          <HobbyCard
-            key={hobby.id}
-            icon={hobby.icon}
-            hobbyname={hobby.name}
-            projects={hobby.projects}
-            bgColor={hobby.bgColor}
-            id={hobby.id}
-          />
-        ))}
+        {hobbies.map((hobby) => {
+          return (
+            <div className="hobbies__category">
+              <h3 className="hobbies__category-title">
+                {hobby.icon} {hobby.name} {hobby.icon}
+              </h3>
+              <div className="hobbies__projects">
+                {hobby.projects.map((project) => {
+                  return (
+                    <div
+                      className="projectCard"
+                      key={project.id}
+                      style={{ backgroundColor: hobby.bgColor }}
+                    >
+                      <p className="projectCard__title">{project.name}</p>
+                      <div className="projectCard__details">
+                        {project.status}
+                        <p className="projectCard__details-link">
+                          {project.projectDetails.link}
+                        </p>
+                        <p className="projectCard__details-startDate">
+                          Started: <input type="date" name="" id="" />{" "}
+                        </p>
+                        <div className="projectCard__details-notes">
+                          <p>Notes:</p>
+                          {project.notes}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
       </main>
     </>
   );

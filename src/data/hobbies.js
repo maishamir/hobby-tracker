@@ -13,11 +13,10 @@ const hobbies = [
         endDate: "",
         hoursSpent: 30,
         notes: "Hard af but fun",
-        currentRow: 42,
-        stitchCount: 150,
-        patternDetails: {
-          pattern:
-            "https://www.ravelry.com/patterns/library/step-by-step-sweater",
+        projectDetails: {
+          currentRow: 42,
+          stitchCount: 150,
+          link: "https://www.ravelry.com/patterns/library/step-by-step-sweater",
           tutorial: "https://www.youtube.com/watch?v=wtofisZp7EA",
           yarn: "Cotton Lily Sugar'n Cream",
           tools: "4.5mm circular needles",
@@ -34,11 +33,11 @@ const hobbies = [
         endDate: "",
         hoursSpent: 12,
         notes: "Red yarn is too bright, might swap for brick tone.",
-        currentRow: 10,
-        stitchCount: 72,
-        patternDetails: {
-          pattern:
-            "https://www.lovecrafts.com/en-gb/p/toadstool-coasters-crochet-pattern-by-sweet-bee-crochet",
+
+        projectDetails: {
+          currentRow: 10,
+          stitchCount: 72,
+          link: "https://www.lovecrafts.com/en-gb/p/toadstool-coasters-crochet-pattern-by-sweet-bee-crochet",
           tutorial: "",
           yarn: "Bernat Handicrafter Cotton",
           tools: "5mm crochet hook",
@@ -63,15 +62,17 @@ const hobbies = [
         startDate: "2025-02-28T20:00:30Z",
         endDate: "",
         notes: "",
-        links: {
-          githubRepo: "https://github.com/maishamir/eveQuests",
+        links: {},
+        projectDetails: {
+          link: "https://github.com/maishamir/eveQuests",
+          milestones: [
+            { state: "Planning", complete: true },
+            { state: "Wireframing", complete: true },
+            { state: "Features", complete: true },
+            { state: "Testing", complete: false },
+          ],
         },
-        milestones: [
-          { state: "Planning", complete: true },
-          { state: "Wireframing", complete: true },
-          { state: "Features", complete: true },
-          { state: "Testing", complete: false },
-        ],
+
         tags: ["productivity", "whimsical"],
       },
       {
@@ -81,15 +82,16 @@ const hobbies = [
         startDate: "2025-04-12T14:36:00Z",
         endDate: "",
         notes: "",
-        links: {
-          githubRepo: "https://github.com/maishamir/hobby-tracker",
+
+        projectDetails: {
+          link: "https://github.com/maishamir/hobby-tracker",
+          milestones: [
+            { state: "Planning", complete: true },
+            { state: "Wireframing", complete: false },
+            { state: "Features", complete: false },
+            { state: "Testing", complete: false },
+          ],
         },
-        milestones: [
-          { state: "Planning", complete: true },
-          { state: "Wireframing", complete: false },
-          { state: "Features", complete: false },
-          { state: "Testing", complete: false },
-        ],
         tags: ["productivity", "dashboard"],
       },
     ],
@@ -107,17 +109,18 @@ const hobbies = [
         startDate: "2025-04-08",
         endDate: "",
         notes: "Sunshade looks like udders 😭 will fix in the ink pass.",
-        links: {
-          pinspo: "https://www.pinterest.com/pin/775744014271588504/",
-        },
+        
         tags: ["illustration", "mushrooms", "cozycore"],
-        milestones: [
-          { state: "Sketch", complete: true },
-          { state: "Line Art", complete: false },
-          { state: "Color Pass", complete: false },
-          { state: "Shading & Highlights", complete: false },
-          { state: "Completed", complete: false },
-        ],
+        projectDetails: {
+          link: "https://www.pinterest.com/pin/775744014271588504/",
+          milestones: [
+            { state: "Sketch", complete: true },
+            { state: "Line Art", complete: false },
+            { state: "Color Pass", complete: false },
+            { state: "Shading & Highlights", complete: false },
+            { state: "Completed", complete: false },
+          ],
+        },
       },
     ],
   },

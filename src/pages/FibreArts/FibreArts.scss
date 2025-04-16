@@ -1,3 +1,45 @@
+.fibreArts {
+  // border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 .fibreProjects {
-  
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-family: sans-serif;
+  &__projectName {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__projectStatus {
+    // border: 1px solid black;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    background: #da616f;
+  }
+
+  &__projectCard {
+    background: #ffc3c6;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    outline: 2px dashed #65000b;
+    outline-offset: -0.5rem;
+  }
+
+  &__projectInfo {
+    &-colors {
+      p {
+        font-weight: bold;
+      }
+      display: flex;
+    }
+  }
 }
